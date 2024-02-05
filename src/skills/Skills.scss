@@ -1,0 +1,13 @@
+@import "../styles/common.scss";
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.skills-section-card {
+  background-color: var(--color-secondary);
+  padding: 1.6rem;
+  border-radius: 1rem;
+}

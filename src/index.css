@@ -6,12 +6,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  background-color: #f6fbff;
   color: #3d3d3d;
   font-weight: 300;
   --color-primary: #00ac93;
   --color-secondary: #e6f4f1;
   --color-text-primary: #3d3d3d;
+  --color-hover: #04C383;
 }
 
 code {

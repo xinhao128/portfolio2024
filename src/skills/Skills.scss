@@ -2,12 +2,30 @@
 
 .skills-grid {
   display: grid;
+  padding: 0rem 2rem;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
-.skills-section-card {
+.skills-card {
   background-color: var(--color-secondary);
-  padding: 1.6rem;
+  padding: 2rem;
   border-radius: 1rem;
+}
+
+.skills-category {
+  margin: 0;
+  margin-bottom: 1.4rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }

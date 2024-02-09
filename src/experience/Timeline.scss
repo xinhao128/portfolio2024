@@ -1,0 +1,57 @@
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 1fr 4px 1fr;
+  column-gap: 2rem;
+}
+
+.timeline-bar {
+  background-color: var(--color-primary);
+  position: relative;
+}
+
+.timeline-circle {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+.timeline-bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline-experience {
+  background-color: var(--color-secondary);
+  padding: 2.2rem;
+  border-radius: 1rem;
+  max-width: 26rem;
+  margin-bottom: 3rem;
+}
+
+.timeline-experience-title {
+  margin: 0.5rem 0rem 0.8rem 0rem;
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+.timeline-experience-company {
+  font-size: 0.98rem;
+  font-weight: 500;
+}
+
+.timeline-experience-description {
+  line-height: 1.7rem;
+}
+
+.justify-right {
+  justify-self: right;
+}
+
+.timeline-date {
+  font-size: 1.2rem;
+}

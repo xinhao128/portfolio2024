@@ -4,6 +4,7 @@ import "./App.scss";
 import Navbar from "./navbar/Navbar";
 import About from "./about/About";
 import Skills from "./skills/Skills";
+import Timeline from "./experience/Timeline";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <main>
         <About />
         <Skills />
+        <Timeline />
       </main>
     </>
   );

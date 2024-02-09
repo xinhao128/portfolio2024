@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Programming Languages",
+    "skills": ["JavaScript", "TypeScript", "React.js", "Vue.js", "Angular", "React Native", "LitElement", "Python", "C", "C++", "HTML", "CSS", "Java", "Spring Boot", "Swift", "GraphQL", "Node.js", "Flask"]
+  },
+  {
+    "category": "Tools & Technologies",
+    "skills": ["Jenkins", "WordPress", "Weebly", "Xcode", "Bootstrap", "Jest", "Junit", "JMeter", "Intellij", "Adobe XD", "Figma", "draw.io", "API Gateways", "AWS Lambda", "AWS S3", "AWS IoT", "Loopback API", "Github", "Subversion"]
+  },
+  {
+    "category": "Database & Servers",
+    "skills": ["AWS EC2", "DynamoDB", "Tomcat", "Karaf", "Heroku", "Aurora DB", "MySQL", "PostgreSQL", "Cassandra", "MongoDB", "Spark", "Firebase", "Redis"]
+  },
+  {
+    "category": "Language Skills",
+    "skills": ["Mandarin", "Catonese"]
+  }
+]

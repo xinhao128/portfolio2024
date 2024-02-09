@@ -1,0 +1,39 @@
+.xl-button {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in;
+}
+
+a.xl-button:hover {
+  border: 1px solid var(--color-hover);
+  background-color: var(--color-hover);
+  color: white;
+}
+
+.xl-button-outlined {
+  color: var(--text-color-primary);
+  background-color: transparent;
+}
+
+.xl-button-small {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 1.4rem;
+  font-size: 0.9rem;
+}
+
+.xl-button-medium {
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  border-radius: 1.8rem;
+  font-size: 0.95rem;
+}
+
+.xl-button-large {
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  font-size: 1rem;
+}

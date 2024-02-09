@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Software Engineer II",
+    "company": "Raytheon, an RTX business",
+    "description": "",
+    "startDate": "Apr 2023" 
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Williams-Sonoma, Inc",
+    "description": "Specialized in Checkout domain; develop/maintain eCommerce checkout logistics, discounts, rewards, credit card transactions, etc.",
+    "startDate": "Jun 2022" 
+  },
+  {
+    "title": "Content Programmer",
+    "company": "ALEKS/McGraw Hill Education",
+    "description": "Tranformed math and chemistry problems from traditional textbooks to the new e-Learning platform.",
+    "startDate": "Aug 2020"
+  },
+  {
+    "title": "App Developer",
+    "company": "Dept of Radiation Oncology, UCI Medical Center",
+    "description": "Built mobile apps to enhance patient and staff clicinal experience",
+    "startDate": "Apr 2019"
+  },
+  {
+    "title": "Technical Assistant",
+    "company": "School of Education, UC Irvine",
+    "description": "Assisted faculty members to build websites for their research projects",
+    "startDate": "Aug 2016"
+  }
+]

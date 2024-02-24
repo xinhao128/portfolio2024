@@ -1,9 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { RefObject, useEffect, useState } from "react";
 import "./Skills.scss";
 import { Skill } from "./interfaces/Skill";
 import Button, { ButtonSize } from "../common/Button";
 
-const Skills = () => {
+type SkillsProps = {
+  id: string;
+  innerRef: RefObject<HTMLElement>
+}
+
+const Skills = ({ id, innerRef }: SkillsProps) => {
   const [skillData, setSkillData] = useState<Skill[] | null>(null);
 
   useEffect(() => {
@@ -29,7 +34,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section className="container">
+    <section className="container" id={id} ref={innerRef}>
       <div className="section-header-container">
         <h2 className="section-header">Skills</h2>
       </div>

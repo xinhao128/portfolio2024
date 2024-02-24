@@ -1,15 +1,20 @@
-import React, { useState } from "react";
+import React, { RefObject, useState } from "react";
 import { ReactComponent as MyPhoto } from "../resources/assets/my-photo.svg";
 import { ReactComponent as EmailIcon } from "../resources/assets/email.svg";
 import { ReactComponent as GithubIcon } from "../resources/assets/github.svg";
 import { ReactComponent as LinkedinIcon } from "../resources/assets/linkedin.svg";
 import "./About.scss";
 
-function About() {
+type AboutProps = {
+  id: string;
+  innerRef: RefObject<HTMLElement>
+}
+
+function About({ id, innerRef }: AboutProps) {
   const [isEmailHovered, setIsEmailHovered] = useState(false);
 
   return (
-    <div className="about-overlay">
+    <div className="about-overlay" id={id} ref={innerRef as RefObject<HTMLDivElement>}>
       <img src={require("../resources/assets/bg-img.jpg")} alt="Cover" />
       <div className="about-content">
         <div className="about-title">

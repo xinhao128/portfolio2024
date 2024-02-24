@@ -1,8 +1,13 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, RefObject, useEffect, useState } from "react";
 import "./Timeline.scss";
 import { Experience } from "./interfaces/Experience";
 
-const Timeline = () => {
+type TimelineProps = {
+  id: string;
+  innerRef: RefObject<HTMLElement>
+}
+
+const Timeline = ({ id, innerRef }: TimelineProps) => {
   const [experienceData, setExperienceData] = useState<Experience[] | null>(
     null
   );
@@ -30,7 +35,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <section className="container">
+    <section className="container" id={id} ref={innerRef}>
       <div className="section-header-container">
         <h2 className="section-header">Experience</h2>
       </div>

@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 4px 1fr;
   column-gap: 2rem;
+  padding: 0rem 1rem;
 }
 
 .timeline-bar {
@@ -54,4 +55,30 @@
 
 .timeline-date {
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .timeline-experience {
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .timeline-experience-title {
+    margin: 0.3rem 0rem;
+    font-size: 1.05rem;
+  }
+  
+  .timeline-experience-company {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  
+  .timeline-experience-description {
+    line-height: 1.2rem;
+    font-size: 0.7rem;
+  }
+
+  .timeline-date {
+    font-size: 1rem;
+  }
 }

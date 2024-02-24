@@ -1,4 +1,4 @@
-import React, { RefObject, useEffect, useState } from "react";
+import { RefObject, useEffect, useState } from "react";
 import "./Skills.scss";
 import { Skill } from "./interfaces/Skill";
 import Button, { ButtonSize } from "../common/Button";

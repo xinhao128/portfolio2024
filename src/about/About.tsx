@@ -1,4 +1,4 @@
-import React, { RefObject, useState } from "react";
+import { RefObject, useState } from "react";
 import { ReactComponent as MyPhoto } from "../resources/assets/my-photo.svg";
 import { ReactComponent as EmailIcon } from "../resources/assets/email.svg";
 import { ReactComponent as GithubIcon } from "../resources/assets/github.svg";

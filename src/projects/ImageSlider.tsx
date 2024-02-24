@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import "./ImageSlider.scss";
 
 import { ReactComponent as LeftArrow } from "../resources/assets/left-arrow.svg";

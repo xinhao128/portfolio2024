@@ -1,4 +1,4 @@
-import React, { Fragment, RefObject, useEffect, useState } from "react";
+import { Fragment, RefObject, useEffect, useState } from "react";
 import "./Timeline.scss";
 import { Experience } from "./interfaces/Experience";
 

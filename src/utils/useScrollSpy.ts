@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, RefObject } from "react";
 
 /**
- * 
+ *
  * @param record - a key value pair that keeps track of the intersection ratio of each section
  * @returns the id of the section that has the highest intersection ratio
  */

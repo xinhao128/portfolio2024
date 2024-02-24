@@ -56,3 +56,32 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .nav-flex {
+    display: block;
+  }
+  .menu-items {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    bottom: 0;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        .active {
+          &::before {
+            width: 40%;
+            top: 120%;
+            left: 0;
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import { useMemo, useRef } from "react";
+import { useRef } from "react";
 import "./App.scss";
 import About from "./about/About";
 import Skills from "./skills/Skills";
@@ -6,9 +6,9 @@ import Timeline from "./experience/Timeline";
 import Projects from "./projects/Projects";
 import Navbar from "./navbar/Navbar";
 import useScrollSpy from "./utils/useScrollSpy";
-import useWindowResizeThreshold from "./utils/useWindowResizeThreshold";
+// import useWindowResizeThreshold from "./utils/useWindowResizeThreshold";
 
-const MAX_MOBILE_WIDTH = 856;
+// const MAX_MOBILE_WIDTH = 856;
 
 function App() {
   const section1Ref = useRef<HTMLElement>(null);
@@ -18,18 +18,19 @@ function App() {
 
   const sectionRefs = [section1Ref, section2Ref, section3Ref, section4Ref];
 
-  const [isMobileSize] = useWindowResizeThreshold(MAX_MOBILE_WIDTH);
+  // const [isMobileSize] = useWindowResizeThreshold(MAX_MOBILE_WIDTH);
 
-  const threshold = useMemo(() => {
-    if (isMobileSize) {
-      return 0.1;
-    } else {
-      return 0.3;
-    }
-  }, [isMobileSize]);
+  // const threshold = useMemo(() => {
+  //   if (isMobileSize) {
+  //     return 0.05;
+  //   } else {
+  //     return 0.05;
+  //   }
+  // }, [isMobileSize]);
 
+  // seems to require a shorter threshold to section detection to work correctly
   const [activeSection] = useScrollSpy(sectionRefs, {
-    threshold: threshold,
+    threshold: 0.05,
   });
 
   return (

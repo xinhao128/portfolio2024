@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Karpos Cultivation",
+    "startDate": "Nov 2020",
+    "endDate": "Jul 2023",
+    "description": "Built a hydroponic IoT system that helps ordinary people grow food inside their houses and monitor their plants' status via a mobile app. I developed a React Native application (with Spring Boot backend) to provide features such as viewing time-lapsed plant growth videos and allowing users to remotely control indoor growth environment.",
+    "imageSlides": [
+      "karpos-1.png",
+      "karpos-2.png",
+      "karpos-3.png"
+    ],
+    "productType": "mobile",
+    "devTools": ["esp32", "AWS IoT", "WebSocket", "AWS Lambda", "AWS Gateway", "React Native", "Spring Boot", "MySQL RDS"]
+  },
+  {
+    "name": "Biometrics Collection System",
+    "location": "Department of Radiation Oncology, UCI Medical Center",
+    "advisor": "Dante Roa",
+    "startDate": "Apr 2019",
+    "endDate": "Aug 2020",
+    "references": [
+      {
+        "media": "Github",
+        "link": "https://github.com/iomt-uci"
+      }
+    ],
+    "description": "Built a patient-monitoring system integrating biometric data collection, hybrid indoor positioning and social-distance tracking with other student interns. All patient data was collected via our custom wearable hardware. Then, we utilized Socket.io and Redis pub/sub protocols to transfer end-user data to server in real-time. On the client side, we made a React Native application for clinical staff to evaluate live patients' conditions.",
+    "imageSlides": [
+      "biometrics-1.png",
+      "biometrics-2.png",
+      "biometrics-3.png"
+    ],
+    "productType": "mobile",
+    "devTools": ["esp32", "Socket.io", "Redis", "Raspberry Pi", "MongoDB", "Node", "React Native", "Victory Native"]
+  },
+  {
+    "name": "Fabflix",
+    "startDate": "Mar 2020",
+    "endDate": "Jun 2020",
+    "description": "Class project in CS122B, Projects in Web Applications at UCI, in which I built a full-stack movie e-commerce website within 10 weeks in microservices architecture. In this project, we practiced concepts of REST APIs, sessions, sticky sessions, pagination, reCAPTCHA, XML parsings, substring/full-text search, connection pooling, master/slave replication, and load balancing.",
+    "imageSlides": [
+      "fab-1.png",
+      "fab-2.png",
+      "fab-3.png",
+      "fab-4.png"
+    ],
+    "productType": "web",
+    "devTools": ["Java", "MySQL", "Tomcat", "AWS EC2", "HTML", "CSS", "JavaScript"]
+  },
+  {
+    "name": "Deeptalk Conversational Chatbot",
+    "startDate": "Jan 2020",
+    "endDate": "Mar 2020",
+    "description": "A simple web application for a conversational chatbot project in CS 175, Project in AI, at UC Irvine. The chatbot utilities information retrieval (IR) techniques, BM25, Word Mover's Distance, BERT, Word2vec Nearest Neighbors, and Deep Attention Matching Network (specifically for multi-turn communication). The web interface allows users to try out various combined IR-based models.",
+    "imageSlides": [
+      "chatbot.png"
+    ],
+    "references": [
+      {
+        "media": "Github",
+        "link": "https://github.com/DeepTalk-CS175/chatbot"
+      }
+    ],
+    "productType": "web",
+    "devTools": ["FLASK", "PYTHON", "JQUERY", "REDIS", "WORD2VEC", "GENSIM"]
+  }
+]

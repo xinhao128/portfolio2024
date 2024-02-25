@@ -63,5 +63,22 @@
     ],
     "productType": "web",
     "devTools": ["FLASK", "PYTHON", "JQUERY", "REDIS", "WORD2VEC", "GENSIM"]
+  },
+  {
+    "name": "School of Education Websites",
+    "startDate": "Sep 2016",
+    "endDate": "Jun 2020",
+    "description": "Designed and maintained more than 10 websites for faculty and staff at the School of Education, UC Irvine to facilitate research projects in education. In particular, I helped redesign the main Education website.",
+    "imageSlides": [
+      "education_uci.jpg",
+      "upward_bound.jpg",
+      "eaop.jpg",
+      "after_school.jpg",
+      "spotlight.jpg",
+      "camp.jpg",
+      "newsletter_archive.jpg"
+    ],
+    "productType": "web",
+    "devTools": ["HTML", "CSS", "JAVASCRIPT", "WORDPRESS", "WEEBLY"]
   }
 ]

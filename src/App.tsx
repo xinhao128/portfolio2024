@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import "./App.scss";
 import About from "./about/About";
 import Skills from "./skills/Skills";
@@ -6,6 +6,7 @@ import Timeline from "./experience/Timeline";
 import Projects from "./projects/Projects";
 import Navbar from "./navbar/Navbar";
 import useScrollSpy from "./utils/useScrollSpy";
+import Footer from "./footer/Footer";
 // import useWindowResizeThreshold from "./utils/useWindowResizeThreshold";
 
 // const MAX_MOBILE_WIDTH = 856;
@@ -17,6 +18,19 @@ function App() {
   const section4Ref = useRef<HTMLElement>(null);
 
   const sectionRefs = [section1Ref, section2Ref, section3Ref, section4Ref];
+
+  useLayoutEffect(() => {
+    setTimeout(() => {
+      const { hash } = window.location;
+      if (hash) {
+        const id = hash.replace("#", "");
+        const targetSection: HTMLElement | null = document.getElementById(id);
+        if (targetSection) {
+          window.scrollTo({ top: targetSection.offsetTop - 70 });
+        }
+      }
+    }, 0);
+  }, []);
 
   // const [isMobileSize] = useWindowResizeThreshold(MAX_MOBILE_WIDTH);
 
@@ -43,6 +57,7 @@ function App() {
         <Skills id="skills" innerRef={section2Ref} />
         <Timeline id="experience" innerRef={section3Ref} />
         <Projects id="projects" innerRef={section4Ref} />
+        <Footer />
       </main>
     </>
   );

@@ -57,6 +57,7 @@ const ImageSlider = ({ imageUrls, productType }: ImageSliderProps) => {
           <RightArrow />
         </button>
       )}
+      <div className="img-slide-cnt">{imageIndex+1} / {imageUrls.length}</div>
     </div>
   );
 };

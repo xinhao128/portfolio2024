@@ -78,6 +78,12 @@
       "camp.jpg",
       "newsletter_archive.jpg"
     ],
+    "references": [
+      {
+        "media": "Github",
+        "link": "/soe-websites"
+      }
+    ],
     "productType": "web",
     "devTools": ["HTML", "CSS", "JAVASCRIPT", "WORDPRESS", "WEEBLY"]
   }

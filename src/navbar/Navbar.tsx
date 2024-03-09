@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.scss";
 import { ReactComponent as MenuIcon } from "../resources/assets/hamburger-menu.svg";
 import { ReactComponent as CloseIcon } from "../resources/assets/close-icon.svg";
+import { Link } from "react-router-dom";
 
 type NavbarProps = {
   activeSection: string;
@@ -18,20 +19,8 @@ function Navbar({ activeSection }: NavbarProps) {
    *
    * @param e mouse click event from an anchor element
    */
-  const onClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
-
+  const onClick = () => {
     setShowMenu(false);
-    // Set the hash
-    const targetHash = e.target as HTMLAnchorElement;
-    window.location.hash = targetHash.hash;
-
-    const targetSection: HTMLElement | null = document.querySelector(
-      `${targetHash.hash}`
-    );
-    if (targetSection) {
-      window.scrollTo({ top: targetSection.offsetTop - 70 });
-    }
   };
 
   return (
@@ -53,40 +42,40 @@ function Navbar({ activeSection }: NavbarProps) {
           </div>
           <ul className={showMenu ? "menu menu-active" : "menu"}>
             <li>
-              <a
-                href="#about"
+              <Link
+                to="#about"
                 onClick={onClick}
                 className={`${activeSection === "about" ? "active" : ""}`}
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#skills"
+              <Link
+                to="#skills"
                 onClick={onClick}
                 className={`${activeSection === "skills" ? "active" : ""}`}
               >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#experience"
+              <Link
+                to="#experience"
                 onClick={onClick}
                 className={`${activeSection === "experience" ? "active" : ""}`}
               >
                 Experience
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#projects"
+              <Link
+                to="#projects"
                 onClick={onClick}
                 className={`${activeSection === "projects" ? "active" : ""}`}
               >
                 Projects
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="menu-icon-wrapper" onClick={() => handleIconClick()}>

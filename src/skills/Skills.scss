@@ -8,14 +8,16 @@
 }
 
 .skills-card {
-  background-color: var(--color-secondary);
+  background-color: var(--color-teritary);
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--color-secondary);
 }
 
 .skills-category {
   margin: 0;
   margin-bottom: 1.4rem;
+  color: var(--color-primary);
 }
 
 .skills-list {

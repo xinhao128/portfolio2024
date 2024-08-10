@@ -62,7 +62,7 @@
       }
     ],
     "productType": "web",
-    "devTools": ["FLASK", "PYTHON", "JQUERY", "REDIS", "WORD2VEC", "GENSIM"]
+    "devTools": ["Flask", "Python", "jQuery", "Redis", "Word2vec", "Gensim"]
   },
   {
     "name": "School of Education Websites",
@@ -78,13 +78,7 @@
       "camp.jpg",
       "newsletter_archive.jpg"
     ],
-    "references": [
-      {
-        "media": "Github",
-        "link": "/soe-websites"
-      }
-    ],
     "productType": "web",
-    "devTools": ["HTML", "CSS", "JAVASCRIPT", "WORDPRESS", "WEEBLY"]
+    "devTools": ["HTML", "CSS", "JavaScript", "WordPress", "Weebly"]
   }
 ]

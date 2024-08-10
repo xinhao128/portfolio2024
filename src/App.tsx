@@ -7,9 +7,7 @@ import Projects from "./projects/Projects";
 import Navbar from "./navbar/Navbar";
 import useScrollSpy from "./utils/useScrollSpy";
 import Footer from "./footer/Footer";
-import { Outlet, Route, Routes } from "react-router-dom";
 import ScrollToHashElement from "./utils/ScrollToHashElement";
-import SoeWebsites from "./soe-websites/SoeWebsites";
 // import useWindowResizeThreshold from "./utils/useWindowResizeThreshold";
 
 // const MAX_MOBILE_WIDTH = 856;
@@ -40,28 +38,16 @@ function App() {
   return (
     <>
       <ScrollToHashElement />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <nav>
-                <Navbar activeSection={activeSection} />
-              </nav>
-              <main>
-                <Outlet />
-                <About id="about" innerRef={section1Ref} />
-                <Skills id="skills" innerRef={section2Ref} />
-                <Timeline id="experience" innerRef={section3Ref} />
-                <Projects id="projects" innerRef={section4Ref} />
-                <Footer />
-              </main>
-            </>
-          }
-        >
-          <Route path="/soe-websites" element={<SoeWebsites />} />
-        </Route>
-      </Routes>
+      <nav>
+        <Navbar activeSection={activeSection} />
+      </nav>
+      <main>
+        <About id="about" innerRef={section1Ref} />
+        <Skills id="skills" innerRef={section2Ref} />
+        <Timeline id="experience" innerRef={section3Ref} />
+        <Projects id="projects" innerRef={section4Ref} />
+        <Footer />
+      </main>
     </>
   );
 }

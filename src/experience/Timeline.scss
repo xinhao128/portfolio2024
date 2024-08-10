@@ -27,11 +27,12 @@
 }
 
 .timeline-experience {
-  background-color: var(--color-secondary);
-  padding: 2.2rem;
-  border-radius: 1rem;
+  background-color: var(--color-teritary);
+  padding: 1.8rem;
+  border-radius: 0.6rem;
   max-width: 26rem;
   margin-bottom: 3rem;
+  border: 1px solid var(--color-secondary);
 }
 
 .timeline-experience-title {
@@ -55,9 +56,20 @@
 
 .timeline-date {
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 450px) {
+  .timeline-grid {
+    grid-template-columns: 1fr 1px 1fr;
+    column-gap: 0.6rem;
+  }
+
+  .timeline-circle {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
   .timeline-experience {
     padding: 1rem;
     margin-bottom: 1.2rem;
@@ -65,17 +77,17 @@
 
   .timeline-experience-title {
     margin: 0.3rem 0rem;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
   }
   
   .timeline-experience-company {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 500;
   }
   
   .timeline-experience-description {
     line-height: 1.2rem;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .timeline-date {

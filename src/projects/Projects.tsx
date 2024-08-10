@@ -52,7 +52,7 @@ const Projects = ({ id, innerRef }: ProjectsProps) => {
                 />
               </div>
               <div className="project-content">
-                <div className="project-title">{project.name}</div>
+                <div className="project-title" lang="en">{project.name}</div>
                 <div className="project-date">
                   {project.startDate} - {project.endDate}
                 </div>
@@ -92,9 +92,6 @@ const Projects = ({ id, innerRef }: ProjectsProps) => {
                     outlined={true}
                   />
                 ))}
-                <div className="rounded-border-wrapper">
-                  <div className="rounded-border"></div>
-                </div>
               </div>
             </div>
           ))}

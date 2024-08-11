@@ -18,7 +18,8 @@
 .about-overlay {
   position: relative;
   width: 100%;
-  height: 100vh; /* vh - viewport height */
+  height: 100vh;
+  min-height: 800px;
 }
 
 .about-overlay img {
@@ -30,16 +31,19 @@
 
 .about-content {
   position: absolute;
-  height: 100%;
   @include grid-template-areas-common(5, 
     'a a a b b'
     'c c c b b'
+    'd d d b b'
   );
   max-width: 1340px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 2;
 }
 
@@ -57,24 +61,23 @@
 .about-header {
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .about-name {
-  font-size: 5.4rem;
+  font-size: 5rem;
   font-weight: 800;
   margin-bottom: 0.4rem;
 }
 
 .about-title {
   grid-area: a;
-  align-self: end;
 }
 
 .about-description {
   grid-area: c;
   line-height: 3rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .about-photo {
@@ -82,12 +85,13 @@
   align-self: center;
 
   .image {
-    width: 85%;
-    height: 85%;
+    width: 78%;
+    height: 78%;
   }
 }
 
 .about-links {
+  grid-area: d;
   display: flex;
   flex-direction: row;
   gap: 3rem;
@@ -124,35 +128,42 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1200px) {
   .about-content {
     width: 80%;
   }
+  .about-photo {
+    .image {
+      width: 82%;
+      height: 82%;
+    }
+  }
 
   .about-header {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   
   .about-name {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   .about-description {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
   }
 }
 
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 992px) {
   .about-content {
-    @include grid-template-areas-common(2, 
-      'b b'  
-      'a a'
-      'c c'
+    @include grid-template-areas-common(1, 
+      'b'  
+      'a'
+      'c'
+      'd'
     );
   }
 
   .about-photo {
-    align-self: end;
     .image {
       width: 40%;
       height: 40%;
@@ -160,21 +171,21 @@
   }
 
   .about-header {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   
   .about-name {
-    font-size: 4.4rem;
+    font-size: 3.8rem;
   }
 
   .about-description {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .about-photo {
-    align-self: end;
     .image {
       width: 50%;
       height: 50%;
@@ -182,22 +193,26 @@
   }
 
   .about-header {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   
   .about-name {
-    font-size: 3.9rem;
+    font-size: 3.5rem;
   }
 
   .about-description {
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+
+  .svg-wrapper {
+    width: 2rem;
+    height: 2rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .about-photo {
-    align-self: end;
     .image {
       width: 60%;
       height: 60%;
@@ -209,69 +224,19 @@
   }
   
   .about-name {
-    font-size: 4.2rem;
-  }
-
-  .about-description {
-    font-size: 1.3rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .about-photo {
-    align-self: end;
-    .image {
-      width: 80%;
-      height: 80%;
-    }
-  }
-
-  .about-header {
-    font-size: 1.3rem;
-  }
-  
-  .about-name {
     font-size: 3.6rem;
   }
 
   .about-description {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 467px) {
   .about-photo {
     .image {
-      width: 85%;
-      height: 85%;
-    }
-  }
-
-  .about-header {
-    font-size: 1.3rem;
-  }
-  
-  .about-name {
-    font-size: 3rem;
-  }
-
-  .about-description {
-    font-size: 1.2rem;
-    line-height: 1.9rem;
-  }
-
-  .svg-wrapper {
-    width: 2rem;
-    height: 2rem;
-  }
-  
-}
-
-@media screen and (max-width: 390px) {
-  .about-photo {
-    .image {
-      width: 85%;
-      height: 85%;
+      width: 70%;
+      height: 70%;
     }
   }
 
@@ -280,11 +245,17 @@
   }
   
   .about-name {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
   }
 
   .about-description {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .svg-wrapper {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
+

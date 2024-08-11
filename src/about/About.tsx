@@ -18,7 +18,7 @@ function About({ id, innerRef }: AboutProps) {
       <img src={require("../resources/assets/bg-img.jpg")} alt="Cover" />
       <div className="about-content">
         <div className="about-title">
-          <span className="about-header">Hello, my name is</span>
+          <span className="about-header">Hi, I am</span>
           <h1 className="about-name">Xinhao Liang</h1>
         </div>
         <div className="about-description">
@@ -27,7 +27,8 @@ function About({ id, innerRef }: AboutProps) {
             technologies (React, Angular, Spring Boot, OGSI). Cares about code
             quality and UI aesthetics. Loves travel and soccer.
           </p>
-          <div className="about-links">
+        </div>
+        <div className="about-links">
             <div className="svg-wrapper tooltip-wrapper">
               <EmailIcon
                 className="svg-icon"
@@ -57,7 +58,6 @@ function About({ id, innerRef }: AboutProps) {
               <LinkedinIcon className="svg-icon" />
             </a>
           </div>
-        </div>
         <div className="about-photo">
           <MyPhoto className="image" />
         </div>
